@@ -1,0 +1,22 @@
+<!-- cadastro-aluno.component.html -->
+<div class="container mt-4">
+    <div class="form-group">
+      <label for="ra">RA:</label>
+      <input type="text" class="form-control" [(ngModel)]="ra" required>
+    </div>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" [(ngModel)]="nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" [(ngModel)]="email" required>
+    </div>
+    <div class="form-group">
+      <label for="celular">Celular:</label>
+      <input type="tel" class="form-control" [(ngModel)]="celular" required>
+    </div>
+    <!-- Adicione mais campos conforme necessário -->
+    <button class="btn btn-primary" (click)="salvarCadastro()">Salvar Cadastro</button>
+  </div>
+  
